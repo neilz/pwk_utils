@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """ Utility for neding hshdumps to http://cracker.offensive-security.com/
 """
 import argparse
@@ -82,7 +83,7 @@ def print_result(hash_in, passwd_out):
     print("%s\n\t=> %s" % (hash_in, passwd_out))
 
 def main():
-    """ Main finction for handiling user argument
+    """ Main finction for handling user arguments
     """
     parser = argparse.ArgumentParser(description='Check windows hashdumps against http://cracker.offensive-security.com')
     parser.add_argument('priority_code', help='Priority code provided by PWK course console')
