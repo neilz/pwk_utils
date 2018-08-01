@@ -53,6 +53,7 @@ def check_stdin(ftp_server, verbose):
     """
     (username, password) = (None, None)
     for line in sys.stdin.readlines():
+        line = line.strip()
         if username is None:
             username = line
             continue
