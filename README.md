@@ -13,3 +13,10 @@ Validate credentials against an ftp server
 ```
 > python3 ./ftp_check.py ftp.domain.local --stdin < ftp_creds.txt
 ```
+
+
+### payload_gen.py
+Generate and (optionally) host reverse shell executables from msfvenom
+```
+> python3 ./payload_gen tap0 -l 80
+```
